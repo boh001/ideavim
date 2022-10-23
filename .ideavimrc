@@ -14,22 +14,24 @@ set noerrorbells
 nmap <leader>f <Action>(Find)
 nmap <leader>p <Action>(GotoFile)
 nmap <leader>r <Action>(FindInPath)
+nmap <leader>o <Action>(OpenFile)
 nmap <leader>s <Action>(ShowErrorDescription)
 nmap <leader>F <Action>(ReformatWithPrettierAction)
 nmap <leader>q <Action>(QuickTypeDefinition)
 
 " window
-map <C-w>i <C-w>v
-map <C-w>s <C-w>s
+noremap <C-w>s <C-w>v
+noremap <C-w>i <C-w>s
 
-" NERDTree 
-map <C-b> :NERDTree<CR>
+" NERDTree
+map <C-b> :NERDTreeToggle<CR>
 map <C-h> <C-w>h
 map <C-j> <C-w>j
-map <C-k> <C-k>k
+map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Multiple-cursors
+
 xmap <C-n> <Plug>NextOccurrence
 xmap <C-p> <Plug>RemoveOccurrence
 xmap <C-x> <Plug>SkipOccurrence
