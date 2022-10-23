@@ -1,0 +1,36 @@
+" Map leader to , ------------------------
+let mapleader=","
+
+" Plugins ------------------------
+set surround
+set multiple-cursors
+set NERDTree
+set showmode
+
+
+" Key mapping ------------------------
+" window
+map <C-w>i <C-w>v
+map <C-w>s <C-w>s
+
+" Find something
+nmap <C-f> <Action>(Find)
+nmap <C-p> <Action>(GotoFile)
+nmap <C-r> <Action>(FindInPath)
+
+" Format
+map <leader>f <Action>(ReformatWithPrettierAction)
+
+" NERDTree ------------------------
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-k>k
+map <C-l> <C-w>l
+
+" Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+nmap <C-x> <Plug>SkipOccurrence
+xmap <C-x> <Plug>SkipOccurrence
