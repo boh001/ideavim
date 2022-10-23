@@ -1,19 +1,20 @@
 " Map leader to , ------------------------
 let mapleader=","
 
-mal.OpenInTerminal)m Plugins ------------------------
+" Plugins ------------------------
 set surround
 set multiple-cursors
 set NERDTree
 set showmode
+set visualbell
+set noerrorbells
 
-
-m Key mapping ------------------------
+" Key mapping ------------------------
 " Intellij action
 nmap <leader>f <Action>(Find)
 nmap <leader>p <Action>(GotoFile)
 nmap <leader>r <Action>(FindInPath)
-nmap <leader>s <Action>(GotoNextError)
+nmap <leader>s <Action>(ShowErrorDescription)
 nmap <leader>F <Action>(ReformatWithPrettierAction)
 
 " window
