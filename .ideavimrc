@@ -1,7 +1,8 @@
-" Map leader to , ------------------------
+" Leader key
 let mapleader=","
 
-" Plugins ------------------------
+" Default config
+" Plugins 
 set surround
 set multiple-cursors
 set NERDTree
@@ -9,25 +10,26 @@ set showmode
 set visualbell
 set noerrorbells
 
-" Key mapping ------------------------
 " Intellij action
 nmap <leader>f <Action>(Find)
 nmap <leader>p <Action>(GotoFile)
 nmap <leader>r <Action>(FindInPath)
 nmap <leader>s <Action>(ShowErrorDescription)
 nmap <leader>F <Action>(ReformatWithPrettierAction)
+nmap <leader>q <Action>(QuickTypeDefinition)
 
 " window
 map <C-w>i <C-w>v
 map <C-w>s <C-w>s
 
-" NERDTree ------------------------
+" NERDTree 
+map <C-b> :NERDTree<CR>
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-k>k
 map <C-l> <C-w>l
 
-" Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
+" Multiple-cursors
 xmap <C-n> <Plug>NextOccurrence
 xmap <C-p> <Plug>RemoveOccurrence
 xmap <C-x> <Plug>SkipOccurrence
